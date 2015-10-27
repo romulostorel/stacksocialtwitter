@@ -20,4 +20,10 @@ RSpec.describe TwitterSearcher do
       expect(search.first.created_at).to eq '2015-10-27 23:00:04 +0000'
     end
   end
+
+  it 'return empty array when term is nil' do
+    VCR.use_cassette('tweets', :match_requests_on => [:method, :uri]) do
+      expect(described_class.search(term: nil)).to eq []
+    end
+  end
 end
