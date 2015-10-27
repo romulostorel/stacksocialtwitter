@@ -1,0 +1,12 @@
+<%= form_tag tweets_path, :method => 'get' do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name => nil %>
+  </p>
+<% end %>
+
+<ul>
+  <% @tweets.each do |tweet| %>
+    <li><%= tweet.text %></li>
+  <% end %>
+</ul>
