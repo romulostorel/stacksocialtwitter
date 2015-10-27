@@ -37,6 +37,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :test do
   gem 'vcr'
   gem 'webmock'
+  gem 'capybara'
+  gem 'poltergeist'
 end
 
 group :development, :test do
