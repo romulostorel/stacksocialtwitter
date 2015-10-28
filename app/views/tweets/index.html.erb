@@ -1,12 +1,10 @@
-<%= form_tag tweets_path, :method => 'get' do %>
-  <p>
-    <%= text_field_tag :search, params[:search] %>
-    <%= submit_tag "Search", :name => nil %>
-  </p>
-<% end %>
-
-<ul>
-  <% @tweets.each do |tweet| %>
-    <li><%=tweet_content(tweet.text) %></li>
-  <% end %>
-</ul>
+<div class="row">
+  <div class="col-md-12 centered">
+    <% @tweets.each do |tweet| %>
+      <blockquote class="twitter-tweet" cite="http://www.worldwildlife.org/who/index.html">
+        <p><%=tweet_content(tweet.text) %></p>
+         <footer><%= link_to tweet.user.try(:name), "http://twitter.com/#{tweet.user.try(:screen_name)}", target: "_blank" %> / <cite><%=l tweet.created_at, format: :short %></cite></footer>
+      </blockquote>
+    <% end %>
+  </div>
+</div>

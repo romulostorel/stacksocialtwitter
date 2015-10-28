@@ -1,0 +1,16 @@
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+
+.centered {
+  text-align: center;
+  font-size: 0;
+}
+.centered > blockquote {
+  float: none;
+  display: inline-block;
+  text-align: left;
+  font-size: 13px;
+}

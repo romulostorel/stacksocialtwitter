@@ -18,4 +18,10 @@ RSpec.describe User, type: :model do
       expect(subject.errors.messages[:password]).to include "can't be blank"
     end
   end
+
+  it 'return user email as to_s' do
+    subject.email = 'user@domain.com'
+
+    expect(subject.to_s).to eq 'user@domain.com'
+  end
 end

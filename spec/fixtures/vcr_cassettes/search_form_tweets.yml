@@ -1092,4 +1092,266 @@ http_interactions:
       string: '70200602499160'
     http_version: 
   recorded_at: Tue, 27 Oct 2015 23:49:23 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:63567/__identify__
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.2.2/2015-04-13)
+      Date:
+      - Wed, 28 Oct 2015 03:49:05 GMT
+      Content-Length:
+      - '14'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '70141195031480'
+    http_version: 
+  recorded_at: Wed, 28 Oct 2015 03:49:05 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:63584/__identify__
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.2.2/2015-04-13)
+      Date:
+      - Wed, 28 Oct 2015 03:52:23 GMT
+      Content-Length:
+      - '14'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '70142984667800'
+    http_version: 
+  recorded_at: Wed, 28 Oct 2015 03:52:23 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:63599/__identify__
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.2.2/2015-04-13)
+      Date:
+      - Wed, 28 Oct 2015 03:52:49 GMT
+      Content-Length:
+      - '14'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '70258633560800'
+    http_version: 
+  recorded_at: Wed, 28 Oct 2015 03:52:49 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/search/tweets.json?count=100&q
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - TwitterRubyGem/5.15.0
+      Authorization:
+      - OAuth oauth_consumer_key="iKZ2e0jcbSDJz5hBfNrhGw", oauth_nonce="c5ffe351eb236e36e9fde21086c5bfce",
+        oauth_signature="oiZbwGSJtnzV8NKb3GnngN5efCc%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1446004372", oauth_token="87469542-f02quDr5pU9sAHTFjEWChh2xrVynVuQfNGjfgNkVG",
+        oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '91'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Wed, 28 Oct 2015 03:52:51 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Wed, 28 Oct 2015 03:52:51 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_d
+      Set-Cookie:
+      - guest_id=v1%3A144600437139929339; Domain=.twitter.com; Path=/; Expires=Fri,
+        27-Oct-2017 03:52:51 UTC
+      - lang=pt; Path=/
+      Status:
+      - 400 Bad Request
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Connection-Hash:
+      - 95a2fc5a255f1e045ed28f412c2ca2b1
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '179'
+      X-Rate-Limit-Reset:
+      - '1446005271'
+      X-Response-Time:
+      - '140'
+      X-Transaction:
+      - f68ff1fda690b0e3
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":25,"message":"Query parameters are missing."}]}'
+    http_version: 
+  recorded_at: Wed, 28 Oct 2015 03:52:52 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:63642/__identify__
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.2.2/2015-04-13)
+      Date:
+      - Wed, 28 Oct 2015 03:55:16 GMT
+      Content-Length:
+      - '14'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '70210514852280'
+    http_version: 
+  recorded_at: Wed, 28 Oct 2015 03:55:16 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:63658/__identify__
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.2.2/2015-04-13)
+      Date:
+      - Wed, 28 Oct 2015 03:56:37 GMT
+      Content-Length:
+      - '14'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '70146863610360'
+    http_version: 
+  recorded_at: Wed, 28 Oct 2015 03:56:37 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:63667/__identify__
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.2.2/2015-04-13)
+      Date:
+      - Wed, 28 Oct 2015 03:56:56 GMT
+      Content-Length:
+      - '14'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '70177923976940'
+    http_version: 
+  recorded_at: Wed, 28 Oct 2015 03:56:56 GMT
 recorded_with: VCR 2.9.3
