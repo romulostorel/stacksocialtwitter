@@ -2,6 +2,10 @@ require "rails_helper"
 
 RSpec.describe TweetsController, type: :controller do
   describe "GET index" do
+    before do
+      allow(controller).to receive(:authenticate_user!).and_return(double)
+    end
+
     let(:cache_duration) { 5.minutes }
 
     it 'set http cache' do
