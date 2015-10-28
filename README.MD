@@ -23,3 +23,10 @@ Setup
 - set your credentials in .env file
 - rake db:migrate
 - rails s
+
+Deploy
+-------------------------
+- Set .env variables in the server
+- Add heroku remote
+- git push heroku master
+- heroku run rake db:migrate
