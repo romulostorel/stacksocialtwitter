@@ -1,4 +1,6 @@
 class TweetsController < ApplicationController
+  before_action :authenticate_user!
+
   def index
     @tweets = TwitterSearcher.search(term: params[:search])
 
