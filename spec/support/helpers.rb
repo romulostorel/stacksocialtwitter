@@ -1,7 +1,11 @@
 module Helpers
-  def sign_in(options={})
-    current_user = User.create(email: 'user@gmail.com', password: 'user123456', password_confirmation: 'user123456')
+  def self.included(receiver)
+    receiver.let(:current_user) do
+      User.create(email: 'user@gmail.com', password: 'user123456', password_confirmation: 'user123456')
+    end
+  end
 
+  def sign_in(options={})
     visit new_user_session_path
 
     fill_in 'Email', with: current_user.email
